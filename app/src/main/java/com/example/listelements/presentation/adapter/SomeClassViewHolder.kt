@@ -1,12 +1,13 @@
-package com.example.listelements.domain
+package com.example.listelements.presentation.adapter
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.example.listelements.databinding.ItemElementsBinding
+import com.example.listelements.domain.SomeClass
 
 // 7 шаг для каждого Вьюхолдера мы прокинули его разметку itemView и листенер, для выполнения каких то
 // действий, на конкретным вьюхолдером, в нашему случае удаление конкретного вьюхолдера
-class ElementViewHolder(
+class SomeClassViewHolder(
     itemView: View,
     private val action: DeleteAction
 ) : RecyclerView.ViewHolder(itemView) {

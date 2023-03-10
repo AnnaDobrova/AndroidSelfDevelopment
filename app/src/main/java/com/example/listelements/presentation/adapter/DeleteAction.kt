@@ -1,4 +1,4 @@
-package com.example.listelements.domain
+package com.example.listelements.presentation.adapter
 
 import com.example.listelements.domain.SomeClass
 

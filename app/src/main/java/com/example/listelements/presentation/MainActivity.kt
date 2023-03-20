@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity(), DeleteAction {
         initRecycler()
 
         //3 шаг заполнение адаптера списком элементов
-        someClassAdapter?.submitList(list)
+        someClassAdapter?.updateList(list)
     }
 
     private fun initRecycler() {
@@ -72,7 +72,6 @@ class MainActivity : AppCompatActivity(), DeleteAction {
     override fun onDeleteItemAction(someClass: SomeClass) {
         Toast.makeText(this, "123", Toast.LENGTH_SHORT).show()
         list.remove(someClass)
-        someClassAdapter?.submitList(list)
-        someClassAdapter?.notifyDataSetChanged()
+        someClassAdapter?.updateList(list)
     }
 }
